@@ -1,7 +1,8 @@
 // Pin assignments
-const int LED = 13; 									
+const int LED = 2; 									
 const int BUTTON = 7;
 
+// Variable to track state of the button
 bool state;
 
 void setup() {
