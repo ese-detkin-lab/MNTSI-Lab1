@@ -15,10 +15,10 @@ void setup() {
 void loop() {
   int sensorValue = analogRead(A0);
   double sensorVoltage = adcToVoltage(sensorValue);
-  Serial.print("Measured value: ");
-  Serial.println(sensorValue);
-  Serial.print("Measured voltage: ");
-  Serial.println(sensorVoltage);
+  Serial.print("Measured_value:");
+  Serial.print(sensorValue);
+  Serial.print(",Measured_voltage_mv:");
+  Serial.println(sensorVoltage*100);
 
   // Vary how long the LED is on by how   
   digitalWrite(LED, HIGH);
